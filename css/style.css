@@ -1,190 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box
-        }
+body {
+    font-family: Arial;
+    background: #111;
+    color: #f7d306;
+    line-height: 1.6
+}
 
-        body {
-            font-family: Arial;
-            background: #111;
-            color: #fff;
-            line-height: 1.6
-        }
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px
-        }
+header {
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    border-bottom: 2px solid red
+}
 
-        header {
-            background: #000;
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            border-bottom: 2px solid red
-        }
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
 
-        .header-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center
-        }
+.logo {
+    height: 40px
+}
 
-        .logo {
-            height: 60px
-        }
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none
+}
 
-        nav ul {
-            display: flex;
-            gap: 20px;
-            list-style: none
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold
-        }
+nav a:hover {
+    color: red
+}
 
-        nav a:hover {
-            color: red
-        }
+.hero {
+    background: url("/faixa-banner.png") center/cover no-repeat;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;   /* Alinha embaixo */
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;    /* Espaço do rodapé do banner */
+}
 
-        .hero {
-            background: url("faixa-banner.jpg") center/cover no-repeat;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center
-        }
 
-        .hero-content {
-            background: rgba(0, 0, 0, 0.7);
-            padding: 30px;
-            border-radius: 10px
-        }
 
-        section {
-            padding: 50px 20px
-        }
+.hero-content {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color:rgb(249, 249, 255);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 
-        section h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: red
-        }
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px
-        }
+}
 
-        .card {
-            background: #1a1a1a;
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid #333
-        }
+section {
+    padding: 50px 20px;
+    margin-bottom: 25px;
 
-        .card:hover {
-            border-color: red
-        }
+}
 
-        table {
-            width: 100%;
-            border-collapse: collapse
-        }
+section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: red
+}
 
-        th,
-        td {
-            border: 1px solid #444;
-            padding: 8px;
-            text-align: center
-        }
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px
+}
 
-        input,
-        button,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: none;
-            border-radius: 5px
-        }
+.card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333
+}
 
-        button {
-            background: red;
-            color: white;
-            cursor: pointer
-        }
+.card:hover {
+    border-color: red
+}
 
-        .hidden {
-            display: none
-        }
+table {
+    width: 100%;
+    border-collapse: collapse
+}
 
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #25D366;
-            padding: 15px;
-            border-radius: 50%;
-            text-decoration: none
-        }
+th,
+td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center
+}
 
-        .videos-layout {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-        }
+input,
+button,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px
+}
 
-        /* Player maior */
-        .video-player {
-            flex: 3;
-        }
+button {
+    background: red;
+    color: white;
+    cursor: pointer
+}
 
-        /* Lista lateral */
-        .video-list {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+.hidden {
+    display: none
+}
 
-        .video-list button {
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 6px;
-            border: none;
-            background: #690505;
-        }
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none
+}
 
-        .video-list button:hover {
-            background: #ddd;
-        }
+.videos-layout {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
 
-        /* Responsivo - celular */
-        @media (max-width: 768px) {
-            .videos-layout {
-                flex-direction: column;
-            }
-        }
+/* Player maior */
+.video-player {
+    flex: 3;
+}
 
-        .btn-iniciar {
-            background: #0a5ed1;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            padding: 12px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-        }
+/* Lista lateral */
+.video-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-        .btn-iniciar:hover {
-            background: #083e8a;
-        }
-    
+.video-list button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    background: #690505;
+}
+
+.video-list button:hover {
+    background: #ddd;
+}
+
+/* Responsivo - celular */
+@media (max-width: 768px) {
+    .videos-layout {
+        flex-direction: column;
+    }
+}
+
+.btn-iniciar {
+    background: #0a5ed1;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.btn-iniciar:hover {
+    background: #083e8a;
+}
