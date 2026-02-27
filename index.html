@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Associação de Karatê Brazuca | Shotokan | Araguari MG</title>
+    <meta name="description" content="Aulas de Karatê Shotokan para crianças, jovens e adultos em Araguari MG.">
+    <link rel="icon" href="Brazuca.png">
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container header-flex">
+        <img src="Brazuca.png" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#aulas">Aulas</a></li>
+                <li><a href="#videos">Vídeos</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#sistema">Sistema</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Associação de Karatê Brazuca</h1>
+        <p>Disciplina • Respeito • Evolução</p>
+    </div>
+</section>
+
+<section id="aulas" class="container">
+    <h2>Nossas Aulas</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Iniciantes</h3>
+            <p>Fundamentos do Karatê</p>
+        </div>
+        <div class="card">
+            <h3>Crianças</h3>
+            <p>Disciplina desde cedo</p>
+        </div>
+        <div class="card">
+            <h3>Avançado</h3>
+            <p>Preparação para graduação</p>
+        </div>
+    </div>
+</section>
+
+<section id="videos" class="container">
+    <h2>Vídeos - Katas Shotokan</h2>
+
+    <div class="videos-layout">
+
+        <div class="video-player">
+            <iframe id="playerVideo"
+                width="100%"
+                height="400"
+                src="https://www.youtube.com/embed/dKfL_KpjUeE"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="video-list">
+            <button data-video="dKfL_KpjUeE">1° - Heian Shodan</button>
+            <button data-video="Ip09VsAzykI">2º - Heian Nidan</button>
+            <button data-video="3b78JinQ-9s">3º - Heian Sandan</button>
+            <button data-video="bq8-Pu9jm3E">4º - Heian Yondan</button>
+            <button data-video="xMUlieZSGHk">5° - Heian Godan</button>
+            <button data-video="mN-C74pr9Oo">6° - Tekki Shodan</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="quiz" class="container">
+    <h2>Quiz</h2>
+    <div class="card">
+        <p id="pergunta">Clique para iniciar</p>
+        <button class="btn-iniciar" id="btnIniciar">Iniciar Quiz</button>
+        <div id="opcoes"></div>
+        <p id="resultado"></p>
+    </div>
+</section>
+
+<section id="sistema" class="container">
+    <h2>Sistema do Instrutor</h2>
+
+    <div id="loginSistema" class="card">
+        <h3>Login</h3>
+        <input id="user" placeholder="Usuário">
+        <input id="pass" type="password" placeholder="Senha">
+        <button id="btnLogin">Entrar</button>
+        <p>admin / 123</p>
+    </div>
+
+    <div id="painelSistema" class="hidden">
+        <div class="card">
+            <h3>Cadastro Aluno</h3>
+            <input id="nome" placeholder="Nome">
+            <input id="idade" type="number" placeholder="Idade">
+            <select id="faixa">
+                <option>Branca</option>
+                <option>Amarela</option>
+                <option>Laranja</option>
+                <option>Verde</option>
+                <option>Roxa</option>
+                <option>Marrom</option>
+                <option>Preta</option>
+            </select>
+            <button id="btnCadastrar">Cadastrar</button>
+        </div>
+
+        <div class="card">
+            <h3>Lista</h3>
+            <div id="lista"></div>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/5534999999999?text=Olá! Gostaria de saber sobre as aulas"
+   class="whatsapp" target="_blank">
+   <img src="WhatsApp_Logo.gif" width="40">
+</a>
+
+<!-- JS EXTERNO -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
