@@ -52,7 +52,7 @@ nav a:hover {
 }
 
 .hero {
-    background: url("/faixa-banner.png") center/cover no-repeat;
+    background: url("faixa-banner.png") center/cover no-repeat;
     height: 200px;
     display: flex;
     align-items: flex-end;   /* Alinha embaixo */
@@ -195,3 +195,4 @@ button {
 .btn-iniciar:hover {
     background: #083e8a;
 }
+
