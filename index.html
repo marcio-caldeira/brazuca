@@ -15,7 +15,7 @@
 
 <header>
     <div class="container header-flex">
-        <img src="Brazuca.png" class="logo">
+        <img src="/Brazuca.png" class="logo">
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -121,6 +121,19 @@
             <h3>Lista</h3>
             <div id="lista"></div>
         </div>
+        <div class="card">
+    <h3>Registrar Presença</h3>
+    <select id="alunoPresenca"></select>
+    <input type="date" id="dataPresenca">
+    <button id="btnPresenca">Registrar</button>
+</div>
+
+<div class="card">
+    <h3>Relatório Mensal</h3>
+    <input type="month" id="mes">
+    <button id="btnRelatorio">Gerar Relatório</button>
+    <div id="relatorio"></div>
+</div>
     </div>
 </section>
 
@@ -130,7 +143,7 @@
 </a>
 
 <!-- JS EXTERNO -->
-<script src="js/script.js"></script>
+<script src="js/script.js" defer></script>
 
 </body>
 </html>
